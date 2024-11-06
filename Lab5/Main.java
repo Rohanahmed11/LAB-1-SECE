@@ -1,10 +1,12 @@
 package Lab5;
+package Lab5;
 
 
 class RollNumberTask implements Runnable {
     // List of student roll numbers
     private String[] rollNumbers = {
-        "2022F-BSE-201", "2022F-BSE-204", "2022-SE-317", "2019-SE-095", "2019-SE-096"
+        "2022F-BSE-201", "2022F-BSE-204", "2022-BSE-205", "2022F-BSE-212", "2022F-BSE-213",
+
     };
 
     @Override
@@ -12,9 +14,8 @@ class RollNumberTask implements Runnable {
         for (String rollNumber : rollNumbers) {
             try {
                 // Simulate some delay for printing
-                Thread.sleep(500);
                 System.out.println("Roll Number: " + rollNumber);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
@@ -32,9 +33,8 @@ class DateOfBirthTask implements Runnable {
         for (String date : dob) {
             try {
                 // Simulate some delay for printing
-                Thread.sleep(500);
                 System.out.println("Date of Birth: " + date);
-            } catch (InterruptedException e) {
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
