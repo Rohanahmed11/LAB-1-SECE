@@ -1,6 +1,4 @@
 package Lab5;
-package Lab5;
-
 
 class RollNumberTask implements Runnable {
     // List of student roll numbers
